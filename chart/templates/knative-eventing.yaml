@@ -1,0 +1,12 @@
+{{- if .Values.knative.eventing.enabled }}
+apiVersion: operator.knative.dev/v1beta1
+kind: KnativeEventing
+metadata:
+  name: knative-eventing
+  namespace: knative-eventing
+spec:
+  # ...
+  source:
+    kafka:
+      enabled: {{ .Values.knative.eventing.source.kafka.enabled }}
+{{ - end }}
