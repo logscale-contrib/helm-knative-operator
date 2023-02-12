@@ -3,6 +3,16 @@ entries:
   knative-operator:
   - apiVersion: v2
     appVersion: 1.9.0
+    created: "2023-02-12T13:58:59.804689302Z"
+    description: A Helm chart for Kubernetes
+    digest: 51c77462250941d9bc2f155ca317e3f9a06f98f38b4539436cdceb91f4338484
+    name: knative-operator
+    type: application
+    urls:
+    - https://github.com/logscale-contrib/helm-knative-operator/releases/download/v1.1.0/knative-operator-1.1.0.tgz
+    version: 1.1.0
+  - apiVersion: v2
+    appVersion: 1.9.0
     created: "2023-02-12T13:46:49.021810633Z"
     description: A Helm chart for Kubernetes
     digest: 0b592aece7590879080bf9af81fbd0e204f8cab24477ccb9e74e28cb633bc3d6
@@ -51,4 +61,4 @@ entries:
     urls:
     - https://github.com/logscale-contrib/helm-knative-operator/releases/download/v1.0.1/knative-operator-1.0.1.tgz
     version: 1.0.1
-generated: "2023-02-12T13:46:49.018447786Z"
+generated: "2023-02-12T13:58:59.801210177Z"
