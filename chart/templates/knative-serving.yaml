@@ -10,7 +10,7 @@ spec:
     istio:
       enabled: false  
     kourier:
-      enabled: false  
+      enabled: true  
   config:
     network:
       ingress-class: "alb"      
