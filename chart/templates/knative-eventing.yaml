@@ -9,4 +9,4 @@ spec:
   source:
     kafka:
       enabled: {{ .Values.knative.eventing.source.kafka.enabled }}
-{{ - end }}
+{{- end }}
