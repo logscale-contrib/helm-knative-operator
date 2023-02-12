@@ -85,10 +85,3 @@ tolerations: []
 
 affinity: {}
 
-knative:
-  eventing:
-    enabled: false
-    source:
-      kafka: false
-  serving:
-    enabled: false
