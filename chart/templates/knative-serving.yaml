@@ -7,8 +7,10 @@ metadata:
 spec:
   # ...
   ingress:
+    istio:
+      enabled: false  
     kourier:
-      enabled: true  
+      enabled: false  
   config:
     network:
       ingress-class: "alb"      
