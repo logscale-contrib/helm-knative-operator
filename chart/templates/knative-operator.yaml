@@ -1739,7 +1739,7 @@ spec:
       clientConfig:
         service:
           name: operator-webhook
-          namespace: {{ .release.namespace }}
+          namespace: {{ .Release.Namespace }}
           path: /resource-conversion
 
 ---
@@ -3376,7 +3376,7 @@ spec:
       clientConfig:
         service:
           name: operator-webhook
-          namespace: {{ .release.namespace }}
+          namespace: {{ .Release.Namespace }}
           path: /resource-conversion
 
 ---
@@ -4137,7 +4137,7 @@ roleRef:
 subjects:
   - kind: ServiceAccount
     name: knative-operator
-    namespace: {{ .release.namespace }}
+    namespace: {{ .Release.Namespace }}
 ---
 # TODO: Consider restriction of non-aggregated role to knativeeventing namespaces.
 apiVersion: rbac.authorization.k8s.io/v1
@@ -4155,7 +4155,7 @@ roleRef:
 subjects:
   - kind: ServiceAccount
     name: knative-operator
-    namespace: {{ .release.namespace }}
+    namespace: {{ .Release.Namespace }}
 
 ---
 # Copyright 2022 The Knative Authors
@@ -4323,7 +4323,7 @@ metadata:
 subjects:
   - kind: ServiceAccount
     name: operator-webhook
-    namespace: {{ .release.namespace }}
+    namespace: {{ .Release.Namespace }}
 roleRef:
   kind: Role
   name: knative-operator-webhook
@@ -4344,7 +4344,7 @@ roleRef:
 subjects:
   - kind: ServiceAccount
     name: operator-webhook
-    namespace: {{ .release.namespace }}
+    namespace: {{ .Release.Namespace }}
 
 ---
 # Copyright 2020 The Knative Authors
@@ -4376,7 +4376,7 @@ roleRef:
 subjects:
   - kind: ServiceAccount
     name: knative-operator
-    namespace: {{ .release.namespace }}
+    namespace: {{ .Release.Namespace }}
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
@@ -4393,7 +4393,7 @@ roleRef:
 subjects:
   - kind: ServiceAccount
     name: knative-operator
-    namespace: {{ .release.namespace }}
+    namespace: {{ .Release.Namespace }}
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
@@ -4410,7 +4410,7 @@ roleRef:
 subjects:
   - kind: ServiceAccount
     name: knative-operator
-    namespace: {{ .release.namespace }}
+    namespace: {{ .Release.Namespace }}
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
@@ -4427,7 +4427,7 @@ roleRef:
 subjects:
   - kind: ServiceAccount
     name: knative-operator
-    namespace: {{ .release.namespace }}
+    namespace: {{ .Release.Namespace }}
 
 ---
 # Copyright 2019 The Knative Authors
