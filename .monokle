@@ -23,5 +23,24 @@
     "kubeConfig": {
         "path": "/Users/rfaircloth/.kube/config",
         "currentContext": "arn:aws:eks:us-east-1:473367108367:cluster/logscale-prod-ops"
+    },
+    "helm": {
+        "previewConfigurationMap": {
+            "426c86a8-5a9c-4a40-b70f-0d02e03e0b1c": {
+                "id": "426c86a8-5a9c-4a40-b70f-0d02e03e0b1c",
+                "name": "main",
+                "helmChartFilePath": "/chart/Chart.yaml",
+                "command": "template",
+                "options": {},
+                "valuesFileItemMap": {
+                    "/chart/values": {
+                        "id": "/chart/values",
+                        "filePath": "/chart/values.yaml",
+                        "isChecked": true,
+                        "order": 0
+                    }
+                }
+            }
+        }
     }
 }
